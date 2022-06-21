@@ -18,25 +18,22 @@ const MySkill = () => {
             descriptions: 'AA',
         },
     ]
-    const [options, setOptions] = useState({
-        title: 'Gráfico de Pizza'
-    })
+
     const [data, setData] = useState([
         ['Linguagens', 'Quantidade'],
         ['React', 100],
-        ['Angula', 80],
-        ['Vue', 50],
+        ['Wordpress', 100],
+        ['Vue', 80],
     ])
     return (
         <div>
             <h2 style={{ alignItems: 'center' }}> My Skills </h2>
             <div>
                 <Chart
-                    width={'500px'}
-                    height={'300px'}
+                    width={'700px'}
+                    height={'500px'}
                     chartType="PieChart"
                     data={data}
-                    options={options}
                 />
             </div>
         </div>
