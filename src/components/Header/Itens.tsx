@@ -5,7 +5,7 @@ type Props = {
 
 const Itens = ({link, name}: Props) => { 
     return(
-        <a href="/"> {name} </a>
+        <a href={link} style={{textDecoration: "none", color:'#fff'}}> {name} </a>
     );
 }
 export default Itens
