@@ -20,7 +20,7 @@ const Header = () => {
         <header style={{display:'flex', gap: '20px', padding:"15px", background: "#000", justifyContent: 'space-between', alignItems: 'center'}}>
             <Menu links={links}/> 
             <div> 
-                <input type={"search"} placeholder="Pesquisar" style={{ padding: "3px" }}/>
+                <input type={"search"} placeholder="Pesquisar" style={{ padding: "10px", borderRadius: '5px', border: 'none' }}/>
             </div>
         </header>
     )

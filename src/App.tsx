@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div style={{ display: 'flex', justifyContent: 'center', minWidth: '100%'}}>
+      <div style={{ display: 'flex', justifyContent: 'center', overflow: 'hidden'}}>
         <div>
           <AboutMe />
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: 'none' }}>
             <MySkill />
             <Estudying />
           </div>

@@ -19,14 +19,14 @@ const Menu = ({ links }: TProps) => {
             <div>
                 {isMob ?
                     <IconButton onClick={() => setOpenMenu(!OpenMenu)}> <DragHandleIcon color="primary" width={'20px'} /> </IconButton>
-                    : <div> {links.map((item: any) => <Itens link={item.link} name={item.name} />)} </div>
+                    : <div style={{gap: '24px', display:'flex'}}> {links.map((item: any) => <Itens link={item.link} name={item.name} />)} </div>
                 }
             </div>
             {OpenMenu &&
                 <div style={{ background: '#000', zIndex: '100', width: ' 300px', display: 'flex', minHeight: '100%', padding: '15px', position: 'fixed', top: '0px', left: '0px' }}>
-                    <div style={{ display: 'block', width: '260px' }}>
+                    <div style={{ display: 'block', width: '260px', marginTop: '35px'}}>
                         {links.map((item: any) => <div> <Itens link={item.link} name={item.name} /> </div>)}
-                        <div style={{marginTop: '30px'}}>
+                        <div style={{ marginTop: '30px' }}>
                             <SocialMedia />
                         </div>
                     </div>
