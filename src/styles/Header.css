@@ -1,8 +1,0 @@
-    .Header {
-        display: 'flex';
-        gap: 20px;
-        padding: "15px";
-        background: "#000";
-        justify-content: 'space-between';
-        align-items: 'center'
-    }

@@ -1,28 +1,27 @@
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/system";
 import AboutMe from "./components/AboutMe";
-import Estudying from "./components/Estudying";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Menu from "./components/Header/Menu";
-import MySkill from "./components/MySkill";
-import Projects from "./components/Projects";
-import SocialMedia from "./components/SocialMedia";
+import "./styles/App.css"
 
 function App() {
+  const theme = useTheme()
+  const isMob = useMediaQuery(theme.breakpoints.down('sm'));
+  const container = {
+    display: 'flex', justifyContent: 'center', overflow: 'hidden',
+    background: 'linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(251,8,169,1) 100%)'
+  }
   return (
     <div className="App">
       <Header />
-      <div style={{ display: 'flex', justifyContent: 'center', overflow: 'hidden'}}>
+      <div style={container}>
         <div>
           <AboutMe />
-          <div style={{ display: 'none' }}>
-            <MySkill />
-            <Estudying />
-          </div>
-          <Projects />
-          <SocialMedia />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

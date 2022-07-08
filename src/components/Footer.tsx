@@ -1,7 +1,7 @@
 const Footer = () => { 
     return( 
-        <div style={{background: 'grey'}}> 
-        <h2 style={{color: 'write', margin: '0px'}}> Footer </h2>
+        <div style={{background: '#000', height: '50px', alignItems:'center', justifyContent: 'center', display: 'flex'}}> 
+        <p style={{color: '#fff', margin: '0px'}}> Desenvolvido por <a> Raynne Andrade </a> ♥ </p>
          </div>
     )
 }

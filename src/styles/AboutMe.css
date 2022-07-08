@@ -1,0 +1,29 @@
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif
+}
+.aboutme_avatar { 
+    margin: 50px 0px
+}
+
+.aboutme_info { 
+    margin: 25px
+}
+
+.inner_text {
+    font-size: 20px
+}
+
+.inner_text_h1 { font-size: 35px }
+
+.button { 
+    width: 150px;
+    height: 30px;
+    border-radius: 18px;
+    background: #fff;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer
+}
