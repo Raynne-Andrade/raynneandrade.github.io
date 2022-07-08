@@ -1,8 +1,10 @@
-const Footer = () => { 
-    return( 
-        <div style={{background: '#000', height: '50px', alignItems:'center', justifyContent: 'center', display: 'flex'}}> 
-        <p style={{color: '#fff', margin: '0px'}}> Desenvolvido por <a> Raynne Andrade </a> ♥ </p>
-         </div>
+import '../styles/Footer.css'
+
+const Footer = () => {
+    return (
+        <footer className="Footer">
+            <p className='Footer--copywriter'> Desenvolvido por <a> Raynne Andrade </a> ♥ </p>
+        </footer>
     )
 }
 export default Footer;

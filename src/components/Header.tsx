@@ -1,5 +1,7 @@
 import Menu from "./Header/Menu"
 
+import "../styles/header.css"
+
 const Header = () => { 
     const links = [
         {
@@ -17,10 +19,10 @@ const Header = () => {
         }
     ]
     return ( 
-        <header style={{display:'flex', gap: '20px', padding:"15px", background: "#000", justifyContent: 'space-between', alignItems: 'center'}}>
+        <header className="Header">
             <Menu links={links}/> 
             <div> 
-                <input type={"search"} placeholder="Pesquisar" style={{ padding: "10px", borderRadius: '5px', border: 'none' }}/>
+                <input type={"search"} placeholder="Pesquisar" className="Header--search" />
             </div>
         </header>
     )

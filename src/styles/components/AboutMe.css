@@ -27,3 +27,9 @@
     border: none;
     cursor: pointer
 }
+
+.next {
+    justify-content: center; 
+    display: flex; 
+    margin-top: 35px
+}

@@ -1,9 +1,8 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { IconButton, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/system';
-import "../styles/AboutMe.css"
 
-// import text from '../styles/main.js'
+import "../styles/components/AboutMe.css"
 
 const AboutMe = () => {
     const avatar = require('../assets/avatar.png')
@@ -11,7 +10,7 @@ const AboutMe = () => {
     const isMob = useMediaQuery(theme.breakpoints.down('sm'));
  
     return (
-        <>
+        <section>
             <div className='aboutme'>
                 <div className="aboutme_avatar">
                     <img src={avatar} width='250px' />
@@ -26,10 +25,10 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ justifyContent: 'center', display: 'flex', marginTop: '35px' }}>
+            <div className='next'>
                 <a href="#portfolio"> <KeyboardArrowDownIcon /> </a>
             </div>
-        </>
+        </section>
     )
 }
 export default AboutMe;
