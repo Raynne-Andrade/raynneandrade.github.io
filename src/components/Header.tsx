@@ -3,6 +3,7 @@ import Menu from "./Header/Menu"
 import "../styles/header.css"
 
 const Header = () => { 
+    const logo = require('../assets/Logo.png')
     const links = [
         {
             name: "Sobre mim",
@@ -20,10 +21,8 @@ const Header = () => {
     ]
     return ( 
         <header className="Header">
+            <img src={logo} width='200px'/>
             <Menu links={links}/> 
-            <div> 
-                <input type={"search"} placeholder="Pesquisar" className="Header--search" />
-            </div>
         </header>
     )
 }

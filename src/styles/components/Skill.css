@@ -1,0 +1,22 @@
+.skill {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px 0px;
+}
+
+.skill__div {
+    width: 50%;
+    justify-content: space-between;
+    display: block
+}
+
+.skill__button {
+    background: rgba(275, 275, 275, 0.20);
+    padding: 6px;
+    border-radius: 15px;
+    margin: 6px
+}
+
+.skill__information {
+    width: 500px
+}

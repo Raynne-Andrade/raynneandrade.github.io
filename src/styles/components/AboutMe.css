@@ -4,21 +4,26 @@
     justify-content: center;
     font-family: sans-serif
 }
-.aboutme_avatar { 
+
+.aboutme_avatar {
     margin: 50px 0px
 }
 
-.aboutme_info { 
+.aboutme_info {
     margin: 25px
 }
 
 .inner_text {
-    font-size: 20px
+    font-size: 20px;
+    color: #fff
 }
 
-.inner_text_h1 { font-size: 35px }
+.inner_text_h1 {
+    font-size: 35px;
+    color: #fff
+}
 
-.button { 
+.button {
     width: 150px;
     height: 30px;
     border-radius: 18px;
@@ -29,7 +34,7 @@
 }
 
 .next {
-    justify-content: center; 
-    display: flex; 
+    justify-content: center;
+    display: flex;
     margin-top: 35px
 }

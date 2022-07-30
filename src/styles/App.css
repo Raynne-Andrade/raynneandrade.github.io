@@ -2,5 +2,8 @@
     display: flex; 
     justify-content: center; 
     overflow: hidden;
-    background: linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(251,8,169,1) 100%)
+    background: #000
+  }
+  .inner-text { 
+    color: #fff
   }
