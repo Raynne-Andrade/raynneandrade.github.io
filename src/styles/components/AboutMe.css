@@ -2,7 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif
+    font-family: sans-serif;
+    flex-direction: column-reverse;
+
 }
 
 .aboutme_avatar {
@@ -28,7 +30,7 @@
     height: 30px;
     border-radius: 18px;
     background: #fff;
-    margin-right: 10px;
+    margin: 10px;
     border: none;
     cursor: pointer
 }
@@ -37,4 +39,10 @@
     justify-content: center;
     display: flex;
     margin-top: 35px
+}
+@media only screen and (min-width: 600px) {
+    .aboutme{ 
+        flex-direction: column;
+        flex-flow: nowrap;
+    }
 }

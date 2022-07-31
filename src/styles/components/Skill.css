@@ -1,11 +1,12 @@
 .skill {
-    display: flex;
+    display: block;
     max-width: 1000px;
     margin: 40px 0px;
+    
 }
 
 .skill__div {
-    width: 50%;
+    width: 100%;
     justify-content: space-between;
     display: block
 }
@@ -18,5 +19,14 @@
 }
 
 .skill__information {
-    width: 500px
+    max-width: 500px
+}
+
+@media only screen and (min-width: 600px) {
+    .skill{ 
+        display: flex;
+    }
+    .skill__div {
+        width: 50%;
+    }
 }
