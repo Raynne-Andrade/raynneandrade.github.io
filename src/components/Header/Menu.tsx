@@ -19,23 +19,23 @@ const Menu = ({ links }: TProps) => {
       <div>
         {isMob ?
           <IconButton onClick={() => setOpenMenu(!OpenMenu)}>
-            <DragHandleIcon color="primary" width={'20px'} />
+            <DragHandleIcon className="text-white"  width={'20px'} />
           </IconButton>
           :
           <div className="flex gap-6">
-            {links.map((item: any) => <Itens link={item.link} name={item.name} />)}
+            {links.map((item: any) => <Itens link={item.link} name={item.name} key={item.name} />)}
           </div>
         }
       </div>
 
       {OpenMenu &&
-        <div className="transition-all duration-500 bg-black z-50 w-80 flex min-h-full p-4 fixed top-0 left-0">
+        <div className="transition-all duration-500 bg-neutral-900 z-50 w-80 flex min-h-full p-4 fixed top-0 left-0">
           <div className="block w-64 mt-9">
-            {links.map((item: any) => <div> <Itens link={item.link} name={item.name} /> </div>)}
+            {links.map((item: any) => <div> <Itens link={item.link} name={item.name} key={item.name}/> </div>)}
           </div>
-          <IconButton className="items-start" onClick={() => setOpenMenu(!OpenMenu)}>
-            <CloseIcon color='primary' />
-          </IconButton>
+          <button className="items-baseline relative top-0 h-3" onClick={() => setOpenMenu(!OpenMenu)}>
+            <CloseIcon className="text-white" />
+          </button>
         </div>
       }
     </div>

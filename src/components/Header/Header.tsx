@@ -13,16 +13,15 @@ const Header = () => {
         }, {
             name: "Skills",
             link: "#skills"
-        }, {
-            name: "Contato",
-            link: "#contact"
         }
     ]
-      return (
-        <header className="flex gap-5 p-4 justify-between items-center bg-pink-300 px-10 dark:bg-neutral-600">
+    return (
+        <header className="flex flex-col gap-5 p-4 justify-between items-center bg-pink-500 px-10 text-neutral-800 md:flex-row dark:bg-black dark:text-white">
             <img src={logo} width='200px' />
-            <Menu links={links} />
-            <DarkModeToggle/>
+            <div className="flex gap-20 justify-between items-center w-full md:justify-end">
+                <Menu links={links} />
+                <DarkModeToggle />
+            </div>
         </header>
     )
 }

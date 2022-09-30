@@ -1,5 +1,4 @@
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Introduction from "./components/Introduction/Intruduction";
@@ -13,13 +12,12 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <div className='flex justify-center overflow-hidden bg-black'>
+            <div className='flex justify-center overflow-hidden dark:bg-black bg-white'>
                 <div>
-                    <Introduction/>
+                    <Introduction />
                     <AboutMe />
-                    <Skill/>
-                    <Projects/>
-                    <Contact/>
+                    <Skill />
+                    <Projects />
                 </div>
             </div>
             <Footer />
