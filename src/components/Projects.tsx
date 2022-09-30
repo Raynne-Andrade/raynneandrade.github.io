@@ -2,14 +2,14 @@ import ReadMore from "./Molecules/ReadMore"
 
 const Projects = () => {
     const project = [
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "1" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "2" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "3" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "4" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "5" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "6" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "7" },
-        { name: 'Pokedrex', url: "#", img: '../../assets/cartao.png', id: "8" }
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "1" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "2" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "3" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "4" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "5" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "6" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "7" },
+        { name: '', url: "#", img: '../../assets/embreve.png', id: "8" }
     ]
 
     return (
@@ -20,8 +20,7 @@ const Projects = () => {
                     {project.map((item: any, index: Number) =>
                         <div className={index >= 6 ? "hidden w-[350px] h-60 rounded-2 overflow-hidden" : " block w-[350px] h-60 rounded-2 overflow-hidden"} key={item.id}>
                             <a href={item.url} className="relative">
-                                <img src={item.img} width="330px" height="250px" className="object-cover" />
-                                <p className="relative bottom-20 text-center"> {item.name}</p>
+                                <img src={item.img} width="330px" height="250px" className="object-cover rounded-2xl" />
                             </a>
                         </div>
                     )}
