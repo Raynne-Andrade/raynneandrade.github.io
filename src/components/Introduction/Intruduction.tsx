@@ -10,7 +10,7 @@ const Introduction = () => {
                 </div>
                 <div className="m-6">
                     <p className='text-xl text-neutral-800 dark:text-white'> Olá, sou a </p>
-                    <p className='typewriter text-4xl text-neutral-800 dark:text-white my-3'>  Raynne Andrade </p>
+                    <p className='typewriter text-4xl text-neutral-800 dark:text-white '>  Raynne Andrade </p>
                     <p className='text-xl text-neutral-800 dark:text-white'> Desenvolvedora Front-End </p>
                     <div className='mt-12'> 
                         <SocialButton name="LinkedIn" url="#"/>
