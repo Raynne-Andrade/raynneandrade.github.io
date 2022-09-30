@@ -1,5 +1,3 @@
-import "../../styles/components/Menu.css"
-
 type Props = { 
     link: string;
     name: string;
@@ -7,7 +5,7 @@ type Props = {
 
 const Itens = ({link, name}: Props) => { 
     return(
-        <a href={link} className="Menu--item"> {name} </a>
+        <a href={link} className="no-underline text-white uppercase font-sans text-base"> {name} </a>
     );
 }
 export default Itens

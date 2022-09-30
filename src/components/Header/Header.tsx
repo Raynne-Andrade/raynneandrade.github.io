@@ -1,9 +1,7 @@
-import Menu from "./Header/Menu"
-
-import "../styles/header.css"
+import Menu from "./Menu"
 
 const Header = () => { 
-    const logo = require('../assets/Logo.png')
+    const logo = require('../../assets/Logo.png')
     const links = [
         {
             name: "Sobre mim",
@@ -20,7 +18,7 @@ const Header = () => {
         }
     ]
     return ( 
-        <header className="Header">
+        <header className="flex gap-5 p-4 justify-between items-center bg-black">
             <img src={logo} width='200px'/>
             <Menu links={links}/> 
         </header>

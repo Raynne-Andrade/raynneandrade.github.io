@@ -5,8 +5,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Itens from "./Itens";
 import { useState } from "react";
 
-import '../../styles/components/Menu.css'
-
 type TProps = {
   links: any
 }
@@ -24,18 +22,18 @@ const Menu = ({ links }: TProps) => {
             <DragHandleIcon color="primary" width={'20px'} />
           </IconButton>
           :
-          <div className="Menu">
+          <div className="flex gap-6">
             {links.map((item: any) => <Itens link={item.link} name={item.name} />)}
           </div>
         }
       </div>
 
       {OpenMenu &&
-        <div className="MenuMob">
-          <div className="MenuMob--item">
+        <div className="transition-all duration-500 bg-black z-50 w-80 flex min-h-full p-4 fixed top-0 left-0">
+          <div className="block w-64 mt-9">
             {links.map((item: any) => <div> <Itens link={item.link} name={item.name} /> </div>)}
           </div>
-          <IconButton className="MenuMob--close" onClick={() => setOpenMenu(!OpenMenu)}>
+          <IconButton className="items-start" onClick={() => setOpenMenu(!OpenMenu)}>
             <CloseIcon color='primary' />
           </IconButton>
         </div>

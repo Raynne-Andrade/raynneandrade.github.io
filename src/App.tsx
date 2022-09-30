@@ -1,24 +1,25 @@
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/system";
-
 import AboutMe from "./components/AboutMe";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Skill from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Introduction from "./components/Introduction/Intruduction";
+import Projects from "./components/Projects";
+import Skill from "./components/Skill/Skills";
 
-import "./styles/App.css";
+import "./styles/index.css";
 
 function App() {
-    const theme = useTheme()
-    const isMob = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
         <div className="App">
             <Header />
-            <div className='container'>
+            <div className='flex justify-center overflow-hidden bg-black'>
                 <div>
+                    <Introduction/>
                     <AboutMe />
                     <Skill/>
+                    <Projects/>
+                    <Contact/>
                 </div>
             </div>
             <Footer />
