@@ -1,10 +1,12 @@
 const AboutMe = () => {
 
+    const raynne = require("../assets/Raynne.png")
+
     return (
         <section className="flex justify-center bg-pink-100 dark:bg-neutral-800 p-5" id="aboutMe">
             <div className="flex content-center gap-4 overflow-hidden flex-wrap md:flex-nowrap">
                 <div>
-                    <img src="../assets/Raynne.png" width={"300px"} />
+                    <img src={raynne} width={"300px"} />
                 </div>
                 <div className="text-neutral-700 dark:text-white self-center text-lg font-normal
                   max-w-4xl leading-7">

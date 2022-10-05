@@ -1,3 +1,5 @@
+import { useState } from "react"
+import ReadLess from "./Molecules/ReadLess"
 import ReadMore from "./Molecules/ReadMore"
 
 const Projects = () => {
@@ -11,22 +13,34 @@ const Projects = () => {
         { name: '', url: "#", img: '../../assets/embreve.png', id: "7" },
         { name: '', url: "#", img: '../../assets/embreve.png', id: "8" }
     ]
+    const embreve = require("../assets/embreve.png")
+
+    const projectbyrow = 3
+    const [next, setNext] = useState(projectbyrow)
+
+    const handleMoreProject = () => {
+        setNext(next + projectbyrow)
+    }
+
+    const handleLessProject = () => { 
+        setNext(projectbyrow)
+    }
 
     return (
         <section className="w-screen min-h-screen bg-pink-100 dark:bg-neutral-800 flex justify-center px-5 py-9" id="portfolio">
             <div className="max-w-6xl">
                 <h2 className="text-black dark:text-white text-2xl mb-10"> Projetos desenvolvidos: </h2>
                 <div className="flex flex-wrap gap-3 justify-evenly">
-                    {project.map((item: any, index: Number) =>
-                        <div className={index >= 6 ? "hidden w-[350px] h-60 rounded-2 overflow-hidden" : " block w-[350px] h-60 rounded-2 overflow-hidden"} key={item.id}>
+                    {project.slice(0, next).map((item: any, index: Number) =>
+                        <div className="w-[350px] h-60 rounded-2 overflow-hidden" key={item.id}>
                             <a href={item.url} className="relative">
-                                <img src={item.img} width="330px" height="250px" className="object-cover rounded-2xl" />
+                                <img src={embreve} width="330px" height="250px" className="object-cover rounded-2xl" />
                             </a>
                         </div>
                     )}
-                    <div className="flex justify-center ">
-                        {project.length > 3 && <ReadMore />}
-                    </div>
+                </div>
+                <div className="flex justify-center ">
+                    {project.length > next ? <ReadMore handleMoreProject={handleMoreProject.bind(this)} /> : <ReadLess handleLessProject={handleLessProject.bind(this)} />}
                 </div>
             </div>
         </section>
