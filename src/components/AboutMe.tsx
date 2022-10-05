@@ -10,7 +10,7 @@ const AboutMe = () => {
                 </div>
                 <div className="text-neutral-700 dark:text-white self-center text-lg font-normal
                   max-w-4xl leading-7">
-                    <h3 className="text-3xl font-bold text-neutral-800 mb-4">
+                    <h3 className="text-3xl font-bold text-neutral-800 mb-4 dark:text-white ">
                         Eu crio sites para pequenas empresas e empreendedores que querem crescer e crescer. 
                     </h3>
                     <p> Especialista em HTML, CSS e Javascript, com sólidos conhecimentos em arquitetura do ecosistema Front-End e em tecnologias com  React, VueJs, TypeScript, Web Components, design responsivo, web mobile, entre outros. </p>

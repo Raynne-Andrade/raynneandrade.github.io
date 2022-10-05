@@ -1,5 +1,7 @@
-import { FaReact, FaVuejs, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa'
+import { FaReact, FaVuejs, FaHtml5, FaCss3Alt, FaJsSquare, FaWordpress, FaFigma, FaSass, FaLaptopCode, FaSearch, FaLaravel} from 'react-icons/fa'
 const Skill = () => {
+
+    const tailwind = require("../../assets/Tailwind.png")
     const skills = ['Javascript', 'react', 'css', 'html', 'vuejs', "Wordpress", "Sass", "Figma", "tailwind", "blade", "seo", "responsividade"]
     function onHoverSkill(item: string) {
         for (let i = 0; i < skills.length; i++) {
@@ -37,41 +39,41 @@ const Skill = () => {
     return (
         <section className='my-10 sm:flex min-h-[200px] justify-center p-5 items-center' id="skills">
             <div className='w-full justify-between block mb-5 sm:w-[400px] '>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('react')} onMouseOut={() => mouseout('react')}>
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('react')} onMouseOut={() => mouseout('react')}>
                     <FaReact size={50} color='#73D8FF' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('vuejs')} onMouseOut={() => mouseout('vuejs')}>
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('vuejs')} onMouseOut={() => mouseout('vuejs')}>
                     <FaVuejs size={50} color='#2D862E' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('html')} onMouseOut={() => mouseout('html')}>
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('html')} onMouseOut={() => mouseout('html')}>
                     <FaHtml5 size={50} color='#FF5722' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('css')} onMouseOut={() => mouseout('css')}>
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('css')} onMouseOut={() => mouseout('css')}>
                     <FaCss3Alt size={50} color="#1273DE" />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Javascript')} onMouseOut={() => mouseout('Javascript')}>
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Javascript')} onMouseOut={() => mouseout('Javascript')}>
                     <FaJsSquare size={50} color="#FB9E00" />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('WordPress')} onMouseOut={() => mouseout('WordPress')}>
-                    <FaReact size={50} color='#73D8FF' />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('WordPress')} onMouseOut={() => mouseout('WordPress')}>
+                    <FaWordpress size={50} color='#207196' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Figma')} onMouseOut={() => mouseout('Figma')}>
-                    <FaVuejs size={50} color='#2D862E' />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Figma')} onMouseOut={() => mouseout('Figma')}>
+                    <FaFigma size={50} color='#000' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Sass')} onMouseOut={() => mouseout('Sass')}>
-                    <FaHtml5 size={50} color='#FF5722' />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('Sass')} onMouseOut={() => mouseout('Sass')}>
+                    <FaSass size={50} color='#C76395' />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('tailwind')} onMouseOut={() => mouseout('tailwind')}>
-                    <FaCss3Alt size={50} color="#1273DE" />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('tailwind')} onMouseOut={() => mouseout('tailwind')}>
+                    <img src={tailwind} width={50} />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('blade')} onMouseOut={() => mouseout('blade')}>
-                    <FaJsSquare size={50} color="#FB9E00" />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('blade')} onMouseOut={() => mouseout('blade')}>
+                    <FaLaravel size={50} color="#eb4d43" />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('seo')} onMouseOut={() => mouseout('seo')}>
-                    <FaCss3Alt size={50} color="#1273DE" />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('seo')} onMouseOut={() => mouseout('seo')}>
+                    <FaSearch size={50} color="#1273DE" />
                 </button>
-                <button className='bg-gray-200 dark:bg-slate-600 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('responsividade')} onMouseOut={() => mouseout('responsividade')}>
-                    <FaJsSquare size={50} color="#FB9E00" />
+                <button className='bg-gray-200 dark:bg-gray-400 p-2 rounded-xl m-2' onMouseOver={() => onHoverSkill('responsividade')} onMouseOut={() => mouseout('responsividade')}>
+                    <FaLaptopCode size={50} color="#FB9E00" />
                 </button>
 
             </div>
