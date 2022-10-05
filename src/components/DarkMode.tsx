@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
+import { FaSun,FaMoon } from "react-icons/fa";
+
+
+
 const DarkModeToggle = () => {
     const { theme, setTheme } = useContext(ThemeContext)
     
@@ -18,7 +22,7 @@ const DarkModeToggle = () => {
               <input onClick={()=>setTheme(theme==='dark'?'light':'dark')} className='absolute opacity-0 w-0 h-0' />
             </span>
           </span>
-          <span className='ml-3 text-sm'>{theme === 'dark' ? 'ON' : 'OFF'}</span>
+          <span className='ml-3 text-sm'>{theme === 'dark' ? <FaMoon color="#62CBF7" size={15} /> : <FaSun color="#F5DC06" size={20}/> }</span>
         </label>
       </div>
     )
