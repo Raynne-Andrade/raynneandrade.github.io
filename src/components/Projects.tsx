@@ -19,7 +19,7 @@ const Projects = () => {
 
     return (
         <section className="w-screen min-h-screen bg-pink-100 dark:bg-neutral-800 flex justify-center px-9 py-9" id="portfolio">
-            <div className="max-w-6xl text-center">
+            <div className="max-w-6xl sm:text-center">
                 <h2 className="text-black dark:text-white font-semibold text-4xl"> {"< Projetos desenvolvidos />"} </h2>
                 <p className="text-pink-500 font-semibold text-4xl mb-20 leading-6"> ______ </p>
                 <div className="flex flex-wrap gap-3 justify-evenly">
