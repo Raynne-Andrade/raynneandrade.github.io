@@ -22,7 +22,7 @@ const Projects = () => {
             <div className="max-w-6xl text-center">
                 <h2 className="text-black dark:text-white font-semibold text-4xl"> {"< Projetos desenvolvidos />"} </h2>
                 <p className="text-pink-500 font-semibold text-4xl mb-20 leading-6"> ______ </p>
-                <div className="flex flex-wrap gap-1 justify-evenly">
+                <div className="flex flex-wrap gap-3 justify-evenly">
                     {project.slice(0, next).map((item: any, index: Number) =>
                         <div className="w-[350px] h-60 rounded-2 overflow-hidden" key={item.id} >
                             <a href={item.url ? item.url : "#portfolio" } className="relative" target={item.url ? "_blank" : ""}>
