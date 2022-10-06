@@ -3,16 +3,7 @@ import ReadLess from "./Molecules/ReadLess"
 import ReadMore from "./Molecules/ReadMore"
 
 const Projects = () => {
-    const project = [
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "1" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "2" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "3" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "4" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "5" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "6" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "7" },
-        { name: '', url: "#", img: '../../assets/embreve.png', id: "8" }
-    ]
+    const project = require('../content/projects.json')
     const embreve = require("../assets/embreve.png")
 
     const projectbyrow = 3
@@ -27,14 +18,19 @@ const Projects = () => {
     }
 
     return (
-        <section className="w-screen min-h-screen bg-pink-100 dark:bg-neutral-800 flex justify-center px-5 py-9" id="portfolio">
-            <div className="max-w-6xl">
-                <h2 className="text-black dark:text-white text-2xl mb-10"> Projetos desenvolvidos: </h2>
-                <div className="flex flex-wrap gap-3 justify-evenly">
+        <section className="w-screen min-h-screen bg-pink-100 dark:bg-neutral-800 flex justify-center px-9 py-9" id="portfolio">
+            <div className="max-w-6xl text-center">
+                <h2 className="text-black dark:text-white font-semibold text-4xl"> {"< Projetos desenvolvidos />"} </h2>
+                <p className="text-pink-500 font-semibold text-4xl mb-20 leading-6"> ______ </p>
+                <div className="flex flex-wrap gap-1 justify-evenly">
                     {project.slice(0, next).map((item: any, index: Number) =>
-                        <div className="w-[350px] h-60 rounded-2 overflow-hidden" key={item.id}>
-                            <a href={item.url} className="relative">
-                                <img src={embreve} width="330px" height="250px" className="object-cover rounded-2xl" />
+                        <div className="w-[350px] h-60 rounded-2 overflow-hidden" key={item.id} >
+                            <a href={item.url ? item.url : "#portfolio" } className="relative" target={item.url ? "_blank" : ""}>
+                                <img src={item.img} width="350px" height="250px" className="object-cover rounded-2x1 " />
+                                <div className="hidden relative bottom-16 z-30 hover:block"> 
+                                    <h2> teste </h2> 
+                                    <button> teste a</button>
+                                </div>
                             </a>
                         </div>
                     )}
