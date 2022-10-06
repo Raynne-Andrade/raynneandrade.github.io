@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Fabrica App",
+        "url": "https://fabricaapp.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/08/fabricaApp.jpeg",
+        "id": "1"
+    },
+    {
+        "name": "Colecionando livros",
+        "url": "https://colecionandolivros.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/09/colecionando-livros.png",
+        "id": "2"
+    },
+    {
+        "name": "L8 Comunicações",
+        "url": "https://l8comunicacao.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/08/l8comunicacoes.jpeg",
+        "id": "3"
+    },
+    {
+        "name": "Closet de tendências",
+        "url": "https://closetdetendencia.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/08/closetDeTendencia.jpeg",
+        "id": "4"
+    },
+    {
+        "name": "DPO",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-28-at-22.03.28.jpeg",
+        "id": "5"
+    },
+    {
+        "name": "Guardador de palavras da Gabi",
+        "url": "https://guardadordepalavrasdagabi.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2022/03/guardador.png",
+        "id": "6"
+    },
+    {
+        "name": "PluzApp",
+        "url": "https://pluzapp.com.br/",
+        "img": "https://raynneandrade.com.br/wp-content/uploads/2021/08/pluApp.jpeg",
+        "id": "7"
+    }
+]

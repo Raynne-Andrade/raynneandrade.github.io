@@ -13,8 +13,8 @@ const Introduction = () => {
                     <p className='typewriter text-4xl text-neutral-800 dark:text-white '>  Raynne Andrade </p>
                     <p className='text-xl text-neutral-800 dark:text-white'> Desenvolvedora Front-End </p>
                     <div className='mt-12'> 
-                        <SocialButton name="LinkedIn" url="#"/>
-                        <SocialButton name="GitHub" url="#"/>
+                        <SocialButton name="LinkedIn" url="https://www.linkedin.com/in/raynne-andrade-6ba995170/"/>
+                        <SocialButton name="GitHub" url="https://github.com/Raynne-Andrade"/>
                     </div>
                 </div>
             </div>
